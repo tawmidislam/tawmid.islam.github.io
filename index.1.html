@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="The personal website of Tawmid Islam — student, developer, and curious mind." />
+  <title>Tawmid Islam — Personal Website</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101114;--panel:#17191f;--muted:#a5a8b3;--text:#f4f5f7;--line:#2b2e37;--accent:#b8f36b;--accent2:#d7ff9f}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#26321d 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1040px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.04em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover,.social a:hover{color:var(--accent)}
+    .hero{padding:100px 0 86px;max-width:800px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}h1{font-size:clamp(48px,9vw,88px);line-height:.98;letter-spacing:-.075em;margin:22px 0 24px}h1 span{color:var(--accent)}.intro{max-width:620px;color:#c4c6ce;font-size:clamp(17px,2.3vw,20px);line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.btn{padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:700;transition:.2s}.btn.primary{background:var(--accent);color:#151811;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+    section{padding:58px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:25px}.section-no{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em}.section-head h2{font-size:26px;letter-spacing:-.04em;margin:0}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:38px}.about p{margin:0;color:#c4c6ce}.note{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px}.note strong{display:block;color:var(--accent);font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.note p{font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:18px;min-height:150px}.card .symbol{font-size:22px}.card h3{font-size:17px;margin:12px 0 5px}.card p{font-size:14px;color:var(--muted);margin:0}
+    .social{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.social a{display:flex;align-items:center;justify-content:space-between;padding:17px 19px;background:var(--panel);border:1px solid var(--line);border-radius:14px;transition:.2s}.social a:hover{border-color:var(--accent);transform:translateY(-2px)}.social small{display:block;color:var(--muted);font-size:12px}.social b{font-size:15px}.arrow{color:var(--accent);font-size:20px}
+    .footer{padding:28px 0 42px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.footer b{color:var(--text)}
+    @media(max-width:700px){.navlinks{gap:14px;font-size:12px}.hero{padding:75px 0 65px}.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.social{grid-template-columns:1fr}section{padding:44px 0}}
+    @media(max-width:390px){.wrap{width:min(100% - 28px,1040px)}.navlinks{gap:10px}.navlinks a{font-size:11px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="#home">TAWMID<span>.</span></a>
+      <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#interests">Interests</a><a href="#connect">Connect</a></nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" style="border:0">
+        <div class="eyebrow"><i class="dot"></i> Personal space on the internet</div>
+        <h1>Hi, I'm<br><span>Tawmid Islam.</span></h1>
+        <p class="intro">A student, developer, and curious mind. I enjoy learning how things work, building ideas into projects, and exploring what technology can make possible.</p>
+        <div class="actions"><a class="btn primary" href="#about">Get to know me</a><a class="btn" href="#connect">Find me online ↗</a></div>
+      </section>
+
+      <section id="about">
+        <div class="section-head"><span class="section-no">01 /</span><h2>Who I am</h2></div>
+        <div class="about">
+          <p>I'm Tawmid — someone who likes to learn by exploring, experimenting, and creating. I'm interested in software development, technology, science, and turning ideas into things people can actually use. I'm still learning, and that's part of the journey.</p>
+          <aside class="note"><strong>My mindset</strong><p>Stay curious. Keep building. Learn something new, improve a little, and let the work speak for itself.</p></aside>
+        </div>
+      </section>
+
+      <section id="interests">
+        <div class="section-head"><span class="section-no">02 /</span><h2>What I'm into</h2></div>
+        <div class="cards">
+          <article class="card"><div class="symbol">⌘</div><h3>Development</h3><p>Apps, websites, coding, and experimenting with new tools.</p></article>
+          <article class="card"><div class="symbol">✳</div><h3>Science & ideas</h3><p>Exploring how the universe works and thinking about what could be possible.</p></article>
+          <article class="card"><div class="symbol">↗</div><h3>Creating</h3><p>Learning through personal projects, creative work, and problem-solving.</p></article>
+        </div>
+      </section>
+
+      <section id="connect">
+        <div class="section-head"><span class="section-no">03 /</span><h2>Find me online</h2></div>
+        <div class="social">
+          <a href="https://www.facebook.com/tawmidislamdihan" target="_blank" rel="noopener noreferrer"><span><b>Facebook</b><small>@tawmidislamdihan</small></span><span class="arrow">↗</span></a>
+          <a href="https://www.instagram.com/tawmid.islam/" target="_blank" rel="noopener noreferrer"><span><b>Instagram</b><small>@tawmid.islam</small></span><span class="arrow">↗</span></a>
+          <a href="https://www.tiktok.com/@tawmid.islam" target="_blank" rel="noopener noreferrer"><span><b>TikTok</b><small>@tawmid.islam</small></span><span class="arrow">↗</span></a>
+          <a href="https://github.com/TawmidSir" target="_blank" rel="noopener noreferrer"><span><b>GitHub</b><small>Projects & code</small></span><span class="arrow">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><span>© <span id="year">2026</span> <b>Tawmid Islam</b>. Made with curiosity.</span><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
